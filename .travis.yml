@@ -22,7 +22,7 @@ script:
 
 deploy:
   provider: script
-  script: bash scripts/deploy.sh
+  script: travis_wait bash scripts/deploy.sh
   on:
     branch: master
 
